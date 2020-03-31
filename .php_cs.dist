@@ -1,0 +1,12 @@
+<?php
+
+return PhpCsFixer\Config::create()
+    ->setRiskyAllowed(true)
+    ->setRules([
+        '@Symfony:risky' => true,
+    ])
+    ->setFinder(PhpCsFixer\Finder::create()
+        ->exclude(['vendor'])
+        ->in(['src', 'tests'])
+    )
+;

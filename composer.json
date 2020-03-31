@@ -1,0 +1,41 @@
+{
+  "name": "kojirock5260/github-mention-to-slack",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "kojirock5260",
+      "email": "kojirock5260@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "ext-json": "*",
+    "pimple/pimple": "^v3.2.3",
+    "maknz/slack": "^1.7.0",
+    "nesbot/carbon": "^2.20.0",
+    "symfony/yaml": "^v4.4.5"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^v2.15.1",
+    "phpunit/phpunit": "^8.2.4",
+    "mockery/mockery": "^1.2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kojirock5260\\GithubMentionToSlack\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kojirock5260\\GithubMentionToSlack\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "csfix": [
+      "php-cs-fixer fix"
+    ],
+    "test": [
+      "phpunit --configuration=phpunit.xml --coverage-html coverage"
+    ]
+  }
+}
